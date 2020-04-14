@@ -47,6 +47,7 @@ function unitscan.target(name)
 			unitscan.play_sound()
 			unitscan.flash.animation:Play()
 			unitscan.discovered_unit = name
+			SendChatMessage("<ALERT> " .. name .. " is UP!", "GUILD")
 		end
 	else
 		found[name] = false
